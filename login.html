@@ -4,90 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>LogIn</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar">
-        <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt="logo" class="logo">
-        <nav class="nav-bar">
-          <ul>
-            <li><a href="index.html">HOME</a></li>
-            <li><a href="about.html">ABOUT US</a></li>
-            <li class="dropdown"><button class="dropbtn">OUR SERVICES</button>
-              <div class="dropdown-content">
-                <a href="services/web.html">Web Development</a>
-              <a href="services/mob.html">Mobile Development</a>
-              <a href="services/app.html">App Development</a>
-              <a href="services/gd.html">Graphic Design</a>
-              </div>
-            </li>
-            <li><a href="login.html">LOG IN</a></li>
-            <li><a href="signup.html">SIGN UP</a></li>
-          </ul>
-        </nav>
-      </div>
-     
-      <br>
-  <div class="wrapper">
-      <div class="imgBx">
-          <img src="/images/imgL.png" id="imgL">
-      </div>
-      <div class="contentBx">
-          <h2>LOG IN</h2>
-        <form action="" class="inputBx">
-            <div class="input">
-                <span>Username</span>
-                <input type="text" placeholder="Username">
+    <section class="header">
+        <nav>
+            <a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
+            <div class="nav-list" id="nav-list">
+                <ul>
+                    <i class="fas fa-window-close" onclick="hideM()"></i>
+                    <li><a href="index.html">home<a></li>
+                    <li><a href="aboutus.html">about us<a></li>
+                    <li class="dropdown"><div class="dropbtn">OUR SERVICES</div>
+                        <div class="dropdown-content">
+                            <a href="services/web.html">Web Development</a>
+                            <a href="services/mob.html">Mobile Development</a>
+                            <a href="services/app.html">App Development</a>
+                            <a href="services/gd.html">Graphic Design</a>
+                        </div>
+                    </li>
+                    <li><a href="login.html">log in<a></li>
+                    <li><a href="joinus.html">join<a></li>
+                </ul>
             </div>
-            <div class="input">
-              <span>Password</span>
-              <input type="password" placeholder="Password">
-          </div>
-          <div class="input" id="forgot-label">
-              <label for=""><a href="#">Forgot password?</a></label>
-          </div>
-          <div class="input">
-              <input type="submit" value="Sign in">
-          </div>
-              <div class="input"><label>Don't have an account?<a href="signup.html">Sign up</a></label> </div>
-        </form>
+            <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>
+        </nav>
+    </section>
+    <section class="post-header post-header-login">
+        <h1>Welcome Back</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, inventore!</p>
+</section>
+
+ <!--Log In box-->
+ <section class="login">
+     <form action="index.html" class="login-form">
+        <h1>Log In</h1>
+        <div class="input">
+            <span>Username</span>
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="input">
+          <span>Password</span>
+          <input type="password" placeholder="Password">
       </div>
-  </div>
-  <!-- <div class="footer">
+      <div class="input" id="forgot-label">
+          <label for=""><a href="#">Forgot password?</a></label>
+      </div>
+      <div class="input">
+          <input type="submit" value="Sign in">
+      </div>
+          <div class="input"><label>Don't have an account?<a href="joinus.html">Sign up</a></label> </div>
+
+     </form>
+ </section>
+
+<!--footer-->
+<section class="footer">
     <div class="container">
-      <div class="row">
-        <div class="footer-col-1">
-          <h3>Download Our App</h3>
-          <p>Download our App for Android or IOS</p>
-          <div class="applogo">
-            <img src="/images/appstore.png" alt="">
+        <div class="container-text">
+            <h3>Download our app</h3>
+            <a href=""><img src="images/appstore.png" alt=""></a>
+        </div>
+        <div class="container-text">
+            <h3>Useful Links</h3>
+            <ul>
+                <a href="index.html"><li>Home Page</li></a>
+                <a href="mainsignup.html"><li>Sign Up</li></a>
+                <a href="about.html"><li>About Us</li></a>
+                <a href=""><li>Contact Us</li></a>
+              </ul>
+        </div>
+        <div class="container-text logo">
+            <a href="index.html"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
+            <p>Everything simplified with our App</p>
           </div>
+        <div class="container-text">
+            <h3>Follow Us</h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <br> <br>
+            <h3>Contact US</h3>
+            <p>+38344444444</p>
+            <p>@freelancer@gmail.com</p>
         </div>
-        <div class="footer-col-2">
-          <img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt="">
-          <p>Everything simplified with our App</p>
-        </div>
-        <div class="footer-col-3">
-          <h3>Useful Links</h3>
-          <ul>
-            <li>Home Page</li>
-            <li>Sign Up</li>
-            <li>About Us</li>
-            <li>Contact Us</li>
-          </ul>
-        </div>
-        <div class="footer-col-4">
-          <h3>Follow Us</h3>
-          <ul>
-            <li>Facebook</li>
-            <li>Twitter</li>
-            <li>Instagram</li>
-            <li>Youtube</li>
-          </ul>
-        </div>
-      </div>
     </div>
-  </div> -->
+</section>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
 </body>
 </html>

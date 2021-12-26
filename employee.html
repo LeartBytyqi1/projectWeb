@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp </title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href=""><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
+            <div class="nav-list" id="nav-list">
+                <ul>
+                    <i class="fas fa-window-close" onclick="hideM()"></i>
+                    <li><a href="index.html">home<a></li>
+                    <li><a href="aboutus.html">about us<a></li>
+                    <li class="dropdown"><div class="dropbtn">OUR SERVICES</div>
+                        <div class="dropdown-content">
+                            <a href="services/web.html">Web Development</a>
+                            <a href="services/mob.html">Mobile Development</a>
+                            <a href="services/app.html">App Development</a>
+                            <a href="services/gd.html">Graphic Design</a>
+                        </div>
+                    </li>
+                    <li><a href="login.html">log in<a></li>
+                    <li><a href="joinus.html">join<a></li>
+                </ul>
+            </div>
+            <i class="fas fa-bars" onclick="showM()" id="HamburgerMenu"></i>
+        </nav>
+    </section>
+    <section class="post-header post-header-signup2">
+        <h1>Work for the best</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi, inventore!</p>
+</section>
+
+<!--Sign up box-->
+<section class="login">
+    <form class="login-form" id="form" onsubmit="validate()">
+        <h1>Sign Up-Employee</h1>
+        <div class="input">
+            <span>Name of Company</span>
+            <input type="text" placeholder="Name" id="name">
+        </div>
+        <div class="input">
+            <span>Email</span>
+            <input type="email" placeholder="Email" id="email">
+        </div>
+        <div class="input">
+            <span>Username</span>
+             <input type="text" placeholder="Username" id="username"> 
+        </div>
+        <div class="input">
+            <span>Password</span>
+            <input type="password" placeholder="Password" id="password">
+        </div>
+        <div class="input" id="confirm">
+            <span>Confirm Password</span>
+            <input type="password" placeholder="Confirm Password" id="confirmPass">
+        </div>
+        <div class="input">
+            <input type="submit" value="Submit">
+        </div>
+        <div class="inputs"><label>Have an account?<a href="login.html">Log In</a></label></div>
+    </form>
+</section>
+
+
+
+
+ <!--footer-->
+<section class="footer">
+    <div class="container">
+        <div class="container-text">
+            <h3>Download our app</h3>
+            <a href=""><img src="images/appstore.png" alt=""></a>
+        </div>
+        <div class="container-text">
+            <h3>Useful Links</h3>
+            <ul>
+                <a href="index.html"><li>Home Page</li></a>
+                <a href="mainsignup.html"><li>Sign Up</li></a>
+                <a href="about.html"><li>About Us</li></a>
+                <a href=""><li>Contact Us</li></a>
+              </ul>
+        </div>
+        <div class="container-text logo">
+            <a href="index.html"><img src="https://www.f-cdn.com/assets/main/en/assets/freelancer-logo-open-graph.png" alt=""></a>
+            <p>Everything simplified with our App</p>
+          </div>
+        <div class="container-text">
+            <h3>Follow Us</h3>
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-pinterest"></i>
+            <br> <br>
+            <h3>Contact US</h3>
+            <p>+38344444444</p>
+            <p>@freelancer@gmail.com</p>
+        </div>
+    </div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
